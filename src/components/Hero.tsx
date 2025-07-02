@@ -1,11 +1,45 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ChevronDown } from 'lucide-react'
+import { ChevronDown, Github, Linkedin, Mail, BookOpenText} from 'lucide-react'
 
 const Hero: React.FC = () => {
   const scrollToExperience = () => {
     document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  const socialLinks = [
+    {
+      name: 'GitHub',
+      icon: Github,
+      url: 'https://github.com/Priya-753',
+      color: 'hover:text-gray-400'
+    },
+    {
+      name: 'LinkedIn',
+      icon: Linkedin,
+      url: 'https://www.linkedin.com/in/priya-tamilselvan/',
+      color: 'hover:text-blue-400'
+    },
+    // {
+    //   name: 'Google Scholar',
+    //   icon: BookOpen,
+    //   url: 'https://scholar.google.com/citations?user=priya-sharma',
+    //   color: 'hover:text-green-400'
+    // },
+    {
+      name: 'Medium',
+      icon: BookOpenText,
+      url: 'https://medium.com/@priya61197',
+      color: 'hover:text-blue-400'
+    },
+    {
+      name: 'Email',
+      icon: Mail,
+      url: 'mailto:priya.gatech@gmail.com',
+      color: 'hover:text-red-400'
+    }
+  ]
+
 
   return (
     <section className="min-h-screen flex items-center justify-center relative">
@@ -57,6 +91,34 @@ const Hero: React.FC = () => {
             Explore My Work
           </motion.button>
         </motion.div>
+
+        {/* Social Links */}
+        <div className="mt-4">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 1 }}
+            className="flex justify-center space-x-6 mb-8"
+          >
+            {socialLinks.map((link, index) => (
+              <motion.a
+                key={link.name}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-neural-text ${link.color} transition-colors duration-300`}
+                whileHover={{ scale: 1.2, y: -2 }}
+                whileTap={{ scale: 0.9 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 1 + index * 0.1 }}
+              >
+                <link.icon size={24} />
+                <span className="sr-only">{link.name}</span>
+              </motion.a>
+            ))}
+          </motion.div>
+        </div>
         
         <motion.div
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2"

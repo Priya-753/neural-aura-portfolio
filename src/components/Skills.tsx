@@ -103,7 +103,7 @@ const Skills: React.FC = () => {
                 Core Skills
               </h3>
               <div className="flex flex-wrap justify-center gap-4">
-                {['Deep Learning', 'Reinforcement Learning', 'Agentic AI', 'Dexterous Manipulation', 'Full Stack Development'].map((tech, index) => (
+                {['Artificial Intelligence', 'Deep Learning', 'Reinforcement Learning', 'AI Agents', 'Full Stack Development'].map((tech, index) => (
                   <motion.div
                     key={tech}
                     className="neural-card px-6 py-3 cursor-pointer"
