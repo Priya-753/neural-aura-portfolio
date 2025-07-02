@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #1E1E25;
+    color: #E2E8F0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+  }
+}
+
+@layer components {
+  .neural-card {
+    @apply bg-neural-card/30 backdrop-blur-sm border border-neural-teal/20 rounded-xl p-6 shadow-lg hover:shadow-neural-teal/20 transition-all duration-300;
+  }
+  
+  .neural-button {
+    @apply bg-gradient-to-r from-neural-teal to-neural-violet text-white font-semibold py-3 px-8 rounded-full hover:shadow-lg hover:shadow-neural-violet/30 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .neural-glow {
+    @apply shadow-lg shadow-neural-teal/20;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E1E25;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #4FD1C5, #8B5CF6);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #38B2AC, #7C3AED);
+}
