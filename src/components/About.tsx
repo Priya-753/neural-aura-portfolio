@@ -52,7 +52,7 @@ const About: React.FC = () => {
               <div className="w-48 h-48 mx-auto mb-6 rounded-full bg-gradient-to-br from-neural-teal to-neural-violet p-1">
                 <div className="w-full h-full rounded-full bg-neural-bg flex items-center justify-center">
                   <img
-                    src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    src="images/PriyaPhoto.png"
                     alt="Priya - Research Engineer"
                     className="w-44 h-44 rounded-full object-cover"
                   />

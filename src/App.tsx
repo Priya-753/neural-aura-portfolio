@@ -9,6 +9,7 @@ import Projects from './components/Publications'
 import Footer from './components/Footer'
 import ChatBot from './components/ChatBot'
 import Navigation from './components/Navigation'
+import Resume from './components/Resume'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Experience />
         <Skills />
         <Projects />
+        <Resume />
       </main>
       <Footer />
       <ChatBot />
