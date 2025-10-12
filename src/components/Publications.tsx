@@ -13,6 +13,17 @@ const Projects: React.FC = () => {
 
   const projects = [
     {
+      title: "Vibe",
+      authors: ["Priyadarshini Tamilselvan"],
+      venue: "TypeScript, React, Inngest",
+      year: "2025",
+      abstract: "A platform to create websites with a prompt.",
+      image: 'images/vibe.png',
+      link: "https://vibe-phi-ten.vercel.app/",
+      citations: 0,
+      type: "Project"
+    },
+    {
       title: "LLMs for Neologisms",
       authors: ["Priyadarshini Tamilselvan"],
       venue: "Python, Hugging Face",
