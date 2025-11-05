@@ -11,20 +11,24 @@ const Experience: React.FC = () => {
 
   const experiences = [
     {
-      title: "Research Intern",
-      company: "IBM",
+      title: "Research Engineer",
+      company: "IBM Research",
       location: "Yorktown Heights, NY",
       period: "May 2025 - Aug 2025",
       "description": "Worked at IBM Research on building intelligent systems to automate DataOps workflows using large language models, agents, and composable data services.",
       "highlights": [
         {
-          "description": "Built an Agentic DataOps platform integrating tools like Question Generation, Text-to-SQL (IBM Granite NL2Insights), and view creation to streamline data product generation."
+          "description": "Built a production-ready agentic DataOps platform with CrewAI, MCP tools, and ReAct planning that automates data-product creation from natural language input using question generation, Text-to-SQL (IBM Granite NL2Insights), and dynamic views.",
+          "link": "https://drive.google.com/file/d/12SYl0EyWHVnOtN6dzxVn5U3HqxbKJKiI/view"
         },
         {
-          "description": "Developed a plug-and-play framework for connecting diverse data sources (Postgres, Snowflake, BigQuery, Kafka) into an agent-controlled pipeline."
+          "description": "Developed a metric-driven orchestration agent that reasons over data quality metrics and autonomously selects tools to improve schema coverage, query efficiency, and product usability."
         },
         {
-          "description": "Prototyped a human-in-the-loop and fully autonomous system configuration for metric-driven decision-making in enterprise data workflows."
+          "description": "Engineered a human- and agent-operable dashboard to manage multi-agent conversations and workflows, leveraging asyncio and task queues for concurrent and distributed orchestration."
+        },
+        {
+          "description": "Built a plug-and-play integration layer supporting PostgreSQL, SQLite, and BigQuery, fully containerized with Docker for seamless deployment."
         }
       ],
       link: "https://research.ibm.com/artificial-intelligence"
@@ -34,8 +38,9 @@ const Experience: React.FC = () => {
       company: "Georgia Institute of Technology",
       location: "Atlanta, GA",
       period: "Aug 2024 - Dec 2025",
-      description: "Pursuing a master's degree with a focus on Artificial Intelligence, Computer Vision, and a specialization in Machine Learning to advance expertise in cutting-edge technologies and their applications.",
+      description: "Pursuing a master's degree with a focus on Artificial Intelligence and a specialization in Machine Learning to advance expertise in cutting-edge technologies and their applications.",
       highlights: [
+        { description: "Working at Database Lab under Prof. Joy Arulraj in Question Answering for Textbooks using RAG" },
         { description: "Working at PAIR Lab under Prof. Animesh Garg in Reinforcement Learning for Dexterous Manipulation" },
         { description: "TA for Aritificial Intelligence Fall 2024/2025" },
         { description: "TA for Knowledge Based AI Spring 2025" }
@@ -49,38 +54,38 @@ const Experience: React.FC = () => {
       period: "Dec 2022 - July 2024",
       description: "Developed a visualization system for private equity ownership data, reducing visualization time by 70% and increasing accuracy by 40%, which led to a 30% rise in new client contracts and earned the highest annual bonus.",
       highlights: [
-        { description: "Reduced data visualization time by 70%" },
-        { description: "Increased accuracy by 40%" },
-        { description: "Drove a 30% increase in new client contracts" },
-        { description: "Awarded highest annual performance bonus" }
+        { description: "Developed graph model to represent complex private equity ownership data, increasing rendering speed from 1.8s to 0.5s (-72%) at 10k+ nodes/edges, driving a 40% client acquisition boost, adding $1M in revenue." },
+        { description: "Led implementation of automated ownership data extraction using Azure Document Intelligence, 24 pages/min with precision/recall 92%/89%, reducing manual review time by 40%." },
+        { description: "Optimized database queries, increasing data retrieval efficiency by 38%, enabling faster, more accurate cap table outputs for improved decision-making." },
+        { description: "Designed the org's testing framework (unit + E2E), automating critical workflows (deploy time 20 to 8 mins) to minimize regressions (< 3% rollback) and accelerate development cycles." },
       ],
       link: "https://www.dealsplus.com"
     },
     {
-      title: "Co-Founder & CTO",
+      title: "Co-Founder & Senior Technical Member",
       company: "Avinya Technologies",
       location: "Bengaluru, India",
       period: "Mar 2021 - Dec 2022",
       description: "Led development of a highly efficient POS and inventory management system in Phase 1, scaling to a SaaS product in Phase 2 that drove retail expansion, operational efficiency, and stakeholder transparency.",
       highlights: [
-        { description: "Enabled 70% expansion in retail outlets with only 25% workforce increase" },
-        { description: "Reduced overstocking and working capital needs by 35% with ML-driven demand forecasts" },
-        { description: "Built an Android POS system reducing transaction time by 42%" },
-        { description: "Automated bank reconciliation, cutting manual effort by 60%" },
+        { description: "Directed software solutions development, enabling a 70% expansion in retail outlets over two years with only a 25% workforce increase." },
+        { description: "Created ML algorithms to predict retail demand, reducing overstocking and working capital needs by 35%." },
+        { description: "Built the POS system and Spring Boot back end, deployed across ~50 stores reducing checkout time 42% with an offline-first, reliable sync model." },
+        { description: "Designed scalable accounting solutions automating payment reconciliation, handled WhatsApp/email notifications out of the box cutting manual back-office time by ~60%." },
       ],
       link: ""
     },
     {
-      title: "Intern & Member of Technical Staff, Risk Tech Team",
+      title: "Member of Technical Staff, Risk Tech Team",
       company: "D.E. Shaw & Co",
       location: "Hyderabad, India",
       period: "Dec 2018 - Mar 2021",
       description: "Built web applications and APIs to analyze macroeconomic impacts on investments, optimized performance, and led migration from Python 2 to 3 within the risk-tech domain.",
       highlights: [
-        { description: "Improved decision-making efficiency by 35% with new analysis features" },
-        { description: "Reduced portfolio comparison time by 20% via optimized workflows" },
-        { description: "Enhanced REST API performance, cutting response times by 25%" },
-        { description: "Unified risk management workflows, boosting operational efficiency by 20%" }
+        { description: "Collaborated on design and maintenance of ETL pipelines and core risk services powering daily and month-end positions across multi-strategy portfolios; partnered directly with quants and risk teams to deliver under tight deadlines." },
+        { description: "Engineered for peak traffic and optimized critical paths and caching with cache engineering team boosted cache hit rate by 88% and reduced backend calls by 41% for time-series financial analysis." },
+        { description: "Transformed ad-hoc analyses into reliable, repeatable data pipelines, shipping comparative workflows for 600k+ monthly/FX positions covering 1,200+ instruments per close; built rule-based monitoring to detect anomalies and minimize manual triage." },
+        { description: "Consolidated multiple tools into a unified risk portal, modernized codebase from Python 2 to 3, raised test coverage by 16%, improved p95 page-load speed by ~1 minute, and authored run-books for seamless on-call handoffs." }
       ],
       link: "https://www.deshaw.com"
     },

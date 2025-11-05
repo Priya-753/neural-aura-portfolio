@@ -26,8 +26,8 @@ const Resume: React.FC = () => {
     {
       category: "Experience",
       items: [
-        "5+ years in SWE & ML/AI",
-        "Research @ IBM",
+        "6+ years in SWE & ML/AI",
+        "Research Engineer@ IBM Research",
         "Ex D.E. Shaw"
       ]
     },
@@ -35,7 +35,9 @@ const Resume: React.FC = () => {
       category: "Education",
       items: [
         "M.S. Computer Science - Georgia Tech",
-        "Specialized in AI"
+        "Specialized in AI & ML & Computational, Perception & Robotics",
+        "Graduate Teaching Assistant for AI & Knowledge Based AI",
+        "Collaborated with Prof. Ashok Goel in the course textbook for Knowledge Based AI"
       ]
     }
   ]
@@ -73,12 +75,12 @@ const Resume: React.FC = () => {
                   Priya Tamilselvan - Resume
                 </h3>
                 <p className="text-neural-text text-sm mb-4">
-                  ML/AI Research Engineer
+                  Full Stack AI Engineer
                 </p>
                 <div className="flex items-center justify-center space-x-4 text-sm text-neural-text mb-6">
                   <div className="flex items-center space-x-1">
                     <Calendar size={14} />
-                    <span>Updated June 2025</span>
+                    <span>Updated October 2025</span>
                   </div>
                   <div className="flex items-center space-x-1">
                     <FileText size={14} />

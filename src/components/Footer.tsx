@@ -16,12 +16,12 @@ const Footer: React.FC = () => {
       url: 'https://www.linkedin.com/in/priya-tamilselvan/',
       color: 'hover:text-blue-400'
     },
-    // {
-    //   name: 'Google Scholar',
-    //   icon: BookOpen,
-    //   url: 'https://scholar.google.com/citations?user=priya-sharma',
-    //   color: 'hover:text-green-400'
-    // },
+    {
+      name: 'Google Scholar',
+      icon: BookOpen,
+      url: 'https://scholar.google.com/citations?user=fRREPooAAAAJ&hl=en',
+      color: 'hover:text-green-400'
+    },
     {
       name: 'Medium',
       icon: BookOpenText,
