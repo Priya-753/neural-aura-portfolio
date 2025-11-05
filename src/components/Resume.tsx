@@ -11,7 +11,7 @@ const Resume: React.FC = () => {
 
   const handleDownload = () => {
     const link = document.createElement('a')
-    link.href = 'public/resume/resume.pdf'
+    link.href = '/resume/resume.pdf'
     link.download = 'Priyadarshini_Tamilselvan_Resume.pdf'
     document.body.appendChild(link)
     link.click()
@@ -19,7 +19,7 @@ const Resume: React.FC = () => {
   }
 
   const handlePreview = () => {
-    window.open('public/resume/resume.pdf', '_blank')
+    window.open('/resume/resume.pdf', '_blank')
   }
 
   const resumeHighlights = [
