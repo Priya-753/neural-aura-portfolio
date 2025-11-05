@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Github, Linkedin, Mail, BookOpen, Twitter, BookOpenText,  } from 'lucide-react'
+import { Github, Linkedin, Mail, Twitter, BookOpenText } from 'lucide-react'
+import GoogleScholarIcon from './GoogleScholarIcon'
 
 const Footer: React.FC = () => {
   const socialLinks = [
@@ -18,7 +19,7 @@ const Footer: React.FC = () => {
     },
     {
       name: 'Google Scholar',
-      icon: BookOpen,
+      icon: GoogleScholarIcon,
       url: 'https://scholar.google.com/citations?user=fRREPooAAAAJ&hl=en',
       color: 'hover:text-green-400'
     },

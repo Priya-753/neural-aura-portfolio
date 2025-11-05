@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
+import GoogleScholarIcon from './GoogleScholarIcon'
 
 const Navigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,7 +41,7 @@ const Navigation: React.FC = () => {
           </motion.div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <motion.a
                 key={item.name}
@@ -51,6 +52,19 @@ const Navigation: React.FC = () => {
                 {item.name}
               </motion.a>
             ))}
+            {/* Google Scholar Link */}
+            <motion.a
+              href="https://scholar.google.com/citations?user=fRREPooAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.2, y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="text-neural-text hover:text-green-400 transition-colors duration-300"
+              title="Google Scholar"
+            >
+              <GoogleScholarIcon size={20} />
+              <span className="sr-only">Google Scholar</span>
+            </motion.a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -80,6 +94,17 @@ const Navigation: React.FC = () => {
                 {item.name}
               </a>
             ))}
+            {/* Google Scholar Link in Mobile Menu */}
+            <a
+              href="https://scholar.google.com/citations?user=fRREPooAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center py-2 text-neural-text hover:text-green-400 transition-colors"
+              onClick={() => setIsOpen(false)}
+            >
+              <GoogleScholarIcon size={20} className="mr-2" />
+              Google Scholar
+            </a>
           </motion.div>
         )}
       </div>

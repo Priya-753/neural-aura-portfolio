@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ChevronDown, Github, Linkedin, Mail, BookOpenText} from 'lucide-react'
+import GoogleScholarIcon from './GoogleScholarIcon'
 
 const Hero: React.FC = () => {
   const scrollToExperience = () => {
@@ -20,12 +21,12 @@ const Hero: React.FC = () => {
       url: 'https://www.linkedin.com/in/priya-tamilselvan/',
       color: 'hover:text-blue-400'
     },
-    // {
-    //   name: 'Google Scholar',
-    //   icon: BookOpen,
-    //   url: 'https://scholar.google.com/citations?user=priya-sharma',
-    //   color: 'hover:text-green-400'
-    // },
+    {
+      name: 'Google Scholar',
+      icon: GoogleScholarIcon,
+      url: 'https://scholar.google.com/citations?user=fRREPooAAAAJ&hl=en',
+      color: 'hover:text-green-400'
+    },
     {
       name: 'Medium',
       icon: BookOpenText,

@@ -115,6 +115,27 @@ const Projects: React.FC = () => {
   
   const blogs = [
     {
+      title: "FLASH: Flow-Based Language-Annotated Grasp Synthesis for Dexterous Hands",
+      venue: "CoRL 2025",
+      date: "2025",
+      type: "Paper",
+      link: "https://openreview.net/pdf?id=ZUX7i3xEmX"
+    },
+    {
+      title: "Survey Paper on Deep Learning for Dexterous Manipulation",
+      venue: "Research",
+      date: "2025",
+      type: "Paper",
+      link: "images/survey_paper.pdf"
+    },
+    {
+      title: "Agentic Controller Demo",
+      venue: "Research",
+      date: "2025",
+      type: "Paper",
+      link: "images/Agentic_Controller_Demo.pdf"
+    },
+    {
       title: "Optimising SQLs",
       venue: "Medium",
       date: "July 30, 2023",
@@ -220,9 +241,14 @@ const Projects: React.FC = () => {
                 >
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                     <div className="flex-1">
-                      <h4 className="text-lg font-heading font-semibold text-neural-heading mb-2">
+                      <a
+                        href={talk.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg font-heading font-semibold text-neural-heading mb-2 hover:text-neural-teal transition-colors block"
+                      >
                         {talk.title}
-                      </h4>
+                      </a>
                       <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-neural-text">
                         <span className="font-medium text-neural-teal">{talk.venue}</span>
                         <div className="flex items-center space-x-1">

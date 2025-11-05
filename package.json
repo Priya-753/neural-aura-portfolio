@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "npm run build && cd dist && git init && git add . && git commit -m 'Deploy site' && git branch -M master && git remote add origin git@github.com:Priya-753/Priya-753.github.io.git && git push -f origin master && cd ..",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
