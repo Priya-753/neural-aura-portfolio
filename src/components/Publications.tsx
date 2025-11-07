@@ -115,6 +115,13 @@ const Projects: React.FC = () => {
   
   const blogs = [
     {
+      title: "Foundational Models in Robotics",
+      venue: "Research",
+      date: "2025",
+      type: "Paper",
+      link: "images/Foundational%20Models%20in%20Robotics.pdf"
+    },
+    {
       title: "FLASH: Flow-Based Language-Annotated Grasp Synthesis for Dexterous Hands",
       venue: "CoRL 2025",
       date: "2025",
