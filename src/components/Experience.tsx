@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
       link: "https://www.gatech.edu"
     },
     {
-      title: "Software Development Engineer II",
+      title: "Full Stack SoMware Engineer III",
       company: "Dealsplus Pvt Ltd",
       location: "UK",
       period: "Dec 2022 - July 2024",
@@ -62,7 +62,7 @@ const Experience: React.FC = () => {
       link: "https://www.dealsplus.io"
     },
     {
-      title: "Co-Founder & Senior Technical Member",
+      title: "Co-Founder & Lead Engineer",
       company: "Avinya Technologies",
       location: "Bengaluru, India",
       period: "Mar 2021 - Dec 2022",
