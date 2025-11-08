@@ -59,7 +59,7 @@ const Experience: React.FC = () => {
         { description: "Optimized database queries, increasing data retrieval efficiency by 38%, enabling faster, more accurate cap table outputs for improved decision-making." },
         { description: "Designed the org's testing framework (unit + E2E), automating critical workflows (deploy time 20 to 8 mins) to minimize regressions (< 3% rollback) and accelerate development cycles." },
       ],
-      link: "https://www.dealsplus.com"
+      link: "https://www.dealsplus.io"
     },
     {
       title: "Co-Founder & Senior Technical Member",
