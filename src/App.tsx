@@ -2,9 +2,9 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import NeuralBackground from './components/NeuralBackground'
 import Hero from './components/Hero'
-import About from './components/About'
+// import About from './components/About'
 import Experience from './components/Experience'
-import Skills from './components/Skills'
+// import Skills from './components/Skills'
 import Projects from './components/Publications'
 import Footer from './components/Footer'
 import ChatBot from './components/ChatBot'
@@ -18,10 +18,10 @@ function App() {
       <Navigation />
       <main className="relative z-10">
         <Hero />
-        <About />
+        {/* <About /> */}
         <Experience />
         <Projects />
-        <Skills />
+        {/* <Skills /> */}
         <Resume />
       </main>
       <Footer />

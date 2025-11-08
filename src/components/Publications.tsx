@@ -115,11 +115,11 @@ const Projects: React.FC = () => {
   
   const blogs = [
     {
-      title: "Foundational Models in Robotics",
-      venue: "Research",
+      title: "Agentic AI Platform",
+      venue: "ICDM 2025",
       date: "2025",
       type: "Paper",
-      link: "images/Foundational%20Models%20in%20Robotics.pdf"
+      link: "images/Agentic_Controller_Demo.pdf"
     },
     {
       title: "FLASH: Flow-Based Language-Annotated Grasp Synthesis for Dexterous Hands",
@@ -130,17 +130,17 @@ const Projects: React.FC = () => {
     },
     {
       title: "Survey Paper on Deep Learning for Dexterous Manipulation",
-      venue: "Research",
+      venue: "Robotics Journal, Research",
       date: "2025",
       type: "Paper",
       link: "images/survey_paper.pdf"
     },
     {
-      title: "Agentic Controller Demo",
+      title: "Foundational Models in Robotics",
       venue: "Research",
       date: "2025",
       type: "Paper",
-      link: "images/Agentic_Controller_Demo.pdf"
+      link: "images/Foundational%20Models%20in%20Robotics.pdf"
     },
     {
       title: "Optimising SQLs",
@@ -175,11 +175,52 @@ const Projects: React.FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl font-heading font-bold text-center mb-16">Projects & Blogs</h2>
+          <h2 className="text-4xl font-heading font-bold text-center mb-16">Publications & Projects</h2>
           
           {/* Publications */}
           <div className="mb-16">
-            <h3 className="text-2xl font-heading font-semibold mb-8 text-neural-heading">Recent Projects</h3>
+            <h3 className="text-2xl font-heading font-semibold mb-8 text-neural-heading">Publications</h3>
+            <div className="space-y-4">
+              {blogs.map((talk, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={inView ? { opacity: 1, x: 0 } : {}}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className="neural-card"
+                >
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                    <div className="flex-1">
+                      <a
+                        href={talk.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-lg font-heading font-semibold text-neural-heading mb-2 hover:text-neural-teal transition-colors block"
+                      >
+                        {talk.title}
+                      </a>
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-neural-text">
+                        <span className="font-medium text-neural-teal">{talk.venue}</span>
+                        <div className="flex items-center space-x-1">
+                          <Calendar size={14} />
+                          <span>{talk.date}</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="mt-2 md:mt-0">
+                      <span className="inline-block bg-neural-violet/20 text-neural-violet px-3 py-1 rounded-full text-sm font-medium">
+                        {talk.type}
+                      </span>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+          
+          {/* Projects */}
+          <div>
+            <h3 className="text-2xl font-heading font-semibold mb-8 text-neural-heading">Projects</h3>
             <div className="grid md:grid-cols-2 gap-6">
               {projects.map((pub, index) => (
                 <motion.div
@@ -228,47 +269,6 @@ const Projects: React.FC = () => {
                     >
                       <ExternalLink size={16} />
                     </a>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-          
-          {/* Talks */}
-          <div>
-            <h3 className="text-2xl font-heading font-semibold mb-8 text-neural-heading">Recent Blogs</h3>
-            <div className="space-y-4">
-              {blogs.map((talk, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, x: -30 }}
-                  animate={inView ? { opacity: 1, x: 0 } : {}}
-                  transition={{ duration: 0.8, delay: index * 0.1 }}
-                  className="neural-card"
-                >
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                    <div className="flex-1">
-                      <a
-                        href={talk.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-lg font-heading font-semibold text-neural-heading mb-2 hover:text-neural-teal transition-colors block"
-                      >
-                        {talk.title}
-                      </a>
-                      <div className="flex flex-col sm:flex-row sm:items-center sm:space-x-4 text-neural-text">
-                        <span className="font-medium text-neural-teal">{talk.venue}</span>
-                        <div className="flex items-center space-x-1">
-                          <Calendar size={14} />
-                          <span>{talk.date}</span>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="mt-2 md:mt-0">
-                      <span className="inline-block bg-neural-violet/20 text-neural-violet px-3 py-1 rounded-full text-sm font-medium">
-                        {talk.type}
-                      </span>
-                    </div>
                   </div>
                 </motion.div>
               ))}
